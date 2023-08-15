@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./marjan-blan-_kUxT8WkoeY-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+:root {
+    --add-task: #009688;
+    --todo-container: #F6F6F6;
+    --input: rgba(255, 255, 255, .3);
+    --plus: #FFF;
+    --plus-font: #009688;
+}
+
+main {
+    margin: 100px;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.todo-contaier {
+    position: relative;
+    margin: 30px 0 auto;
+    background-color: var(--todo-container);
+}
+
+.add-cont {
+    position: relative;
+    padding: 20px;
+    padding-left: 35px;
+    background-color: var(--add-task);
+    border-radius: 15px 15px 0  0px ;
+}
+
+.add-cont input {
+    width: calc(100% - 50px);
+    height: 70px;
+    background-color: var(--input);
+    border: none;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.add-cont input:focus {
+    outline: none;
+}
+
+.add-cont .plus {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #FFF;
+    right: 30px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    color: #009688;
+    cursor: pointer;
+    font-size: 60px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.add-cont .plus:hover {
+    transform: rotate(90deg);
+}
+.tasks-cont {
+    background-color: rgba(128, 128, 128, 0.271);
+    width: 100%;
+    padding: 15px;
+} 
+
+.tasks-cont > span {
+    display: block;
+    background-color:#FFF ;
+    height: 50px;
+    padding:15px;
+    font-size: 20px;
+}
+
+.tasks-cont > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.tasks-cont .no-tasks-message {
+    color: #777;
+}
+.task-box .delete {
+float: right;
+background-color: #E91E63;
+padding: 4px 10px;
+color: #FFF;
+font-size: 12px;
+font-weight: bold;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.tasks-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.271);
+    font-size: 20px;
+}
+.tasks-stats .tasks-count span {
+background-color: #E91E63;
+padding: 15px;
+border-radius: 15px;
+color: white;
+margin-left: 10px;
+
+}
+.tasks-stats .tasks-completed span {
+background-color: #009688;
+padding: 15px;
+border-radius: 15px;
+color: white;
+margin-left: 10px;
+}
+.tasks-stats .tasks-count,
+.tasks-stats .tasks-completed {
+    background-color: #FFF;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+.tasks-buttons {
+    background-color: rgba(128, 128, 128, 0.271);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 0 0 15px 15px ;
+}
+.tasks-buttons button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.finish-all {
+    background-color: #E91E63;
+}
+.delete-all {
+    background-color: #009688;
+}
+.finshed {
+    text-decoration: line-through;
+}

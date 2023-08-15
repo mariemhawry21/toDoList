@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="todo-container">
+            <div class="add-cont">
+                <input type="text" placeholder="add your task" style="color: white;">
+                <span class="plus">+</span>
+            </div>
+            <div class="tasks-cont">
+                <span class="no-tasks-message">No Tasks To Show</span>
+            </div>
+        </div>
+        <div class="tasks-stats">
+            <div class="tasks-count">
+                Tasks <span>0</span>
+            </div>
+            <div class="tasks-completed">
+                Completed <span>0</span>
+            </div>
+        </div>
+        <div class="tasks-buttons">
+            <button class="finish-all">Finish All</button>
+            <button class="delete-all">Delete All</button>
+        </div>
+    </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
